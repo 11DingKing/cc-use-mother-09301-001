@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "product": "高校分类定位论证",
+  "source_context": "http://edu.people.com.cn/n1/2026/0924/c1006-40804945.html",
+  "actors": [
+    "主管部门",
+    "高校",
+    "评审专家"
+  ],
+  "states": [
+    "草拟",
+    "受理",
+    "评审",
+    "签署",
+    "复议"
+  ],
+  "invariants": [
+    "分类规则版本",
+    "专家回避",
+    "签署快照",
+    "复议追溯"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "09301-001-A",
+      "actor": "主管部门",
+      "state": "草拟"
+    },
+    {
+      "case_id": "09301-001-B",
+      "actor": "评审专家",
+      "state": "受理"
+    }
+  ],
+  "tags": [
+    "university-classification",
+    "evidence-review"
+  ]
+}
