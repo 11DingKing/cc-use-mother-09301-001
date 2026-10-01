@@ -1,6 +1,17 @@
 [project]
 name = "domain-contract-09301-001"
-version = "0.1.0"
-description = "高校分类定位论证的领域约定与校验工具"
+version = "0.2.0"
+description = "高校分类定位论证：领域约定、确定性规则引擎与带签署快照的评审服务端"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+classification-server = "classification.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["classification*", "domain_contract*"]
